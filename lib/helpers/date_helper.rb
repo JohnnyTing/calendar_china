@@ -3,14 +3,14 @@ module DateHelper
     ::Date.current.year
   end
 
-  def right_date(date)
+  def adjust_date(date)
     case date
     when String
       date
     when ::Date, DateTime
-      date.strftime('%F')
+      format_date(date)
     when Integer
-      Time.at(date).strftime('%F')
+      format_date(Time.at(date))
     end
   end
 
@@ -19,6 +19,6 @@ module DateHelper
   end
 
   def current_date
-    ::Date.current.strftime('%F')
+    format_date(::Date.current)
   end
 end
