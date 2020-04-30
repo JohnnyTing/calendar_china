@@ -14,6 +14,12 @@ Add this line to your application's Gemfile:
 gem 'calendar_china'
 ```
 
+Or use github
+
+```ruby
+gem 'calendar_china', github: 'JohnnyTing/calendar_china'
+```
+
 And then execute:
 
     $ bundle install
