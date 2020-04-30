@@ -2,7 +2,7 @@
 
 Due to the extremely weird holidays in China, we have to customize the calendar.
 
-NOTE: need to update the lib/data/{xxxx}.json on time.
+NOTE: need to update these lib/data/{xxxx}.json on time.
 
 These datasource are retrieved from the [holiday-cn](https://github.com/NateScarlet/holiday-cn), and thanks to NateScarlet
 
