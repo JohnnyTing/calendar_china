@@ -1,6 +1,10 @@
 # CalendarChina
 
-Due to the extremely weird holidays in china, we have to customize the calendar.These datasource are retrieved from the [holiday-cn](https://github.com/NateScarlet/holiday-cn).
+Due to the extremely weird holidays in china, we have to customize the calendar.
+
+NOTE: need to update the lib/data/{xxxx}.json on time.
+
+These datasource are retrieved from the [holiday-cn](https://github.com/NateScarlet/holiday-cn), and thanks to NateScarlet
 
 ## Installation
 
@@ -20,15 +24,19 @@ Or install it yourself as:
 
 ## Usage
 
- By default, initialize current year and date. you also can specify the fields. Below is some examples for usage:
+ By default, initialize current year and date. you also can specify the fields. Below is an example:
  ```ruby
   ccd = CalendarChina::Date.new("2020", "2020-01-01")
+  
   # return true
   ccd.is_holiday?
+  
   # return true
   ccd.is_rest?
-  # # return false
+  
+  # return false
   ccd.is_workday?
+  
   # return hash:  {:date=>"2020-01-02", :days=>0}, date field is next workday lasted, days field is via these days arrives next workday
   ccd.next_workday
  ```
