@@ -1,6 +1,6 @@
 # CalendarChina
 
-Due to the extremely weird holidays in china, we have to customize the calendar.
+Due to the extremely weird holidays in China, we have to customize the calendar.
 
 NOTE: need to update the lib/data/{xxxx}.json on time.
 
